@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2587f5eb96907a3bd807ed5ea983e874 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2587f5eb96907a3bd807ed5ea983e874" ></div>
+        
+    
+    <div style="
+        position: fixed; 
+        bottom: 580px;
+        left: 270px;
+        width: 120px;
+        height: 90px; 
+        z-index:9999;
+        font-size:14px;
+        ">
+        <p><a style="color:blue;">&#9679;</a>&nbsp;Watergeus</p>
+        <p><a style="color:red;">&#9679;</a>&nbsp;Waterbuffel</p>
+        <p><a style="color:green;">&#9679;</a>&nbsp;Waterval</p>
+        <p><a style="color:yellow;">&#9679;</a>&nbsp;Waterman</p>
+    </div>
+    <div style="
+        position: fixed; 
+        bottom: 550px;
+        left: 250px;
+        width: 120px;
+        height: 130px; 
+        border:2px solid grey; 
+        z-index:9998;
+        font-size:14px;
+        background-color:white;
+        opacity: 0.7;
+        ">
+    </div>
+    
+</body>
+<script>
+    
+    
+            var map_2587f5eb96907a3bd807ed5ea983e874 = L.map(
+                "map_2587f5eb96907a3bd807ed5ea983e874",
+                {
+                    center: [51.9, 4.3],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11.4,
+                    zoomControl: false,
+                    preferCanvas: false,
+                    scrollWheelZoom: false,
+                    dragging: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_32fcd73bc81c2a700413abef3a3443bc = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2587f5eb96907a3bd807ed5ea983e874);
+        
+    
+            var poly_line_83c15f72ad4bde75a7e67e3daf616873 = L.polyline(
+                [[51.89740273617377, 4.460817447562738], [51.90931, 4.41926], [51.91265, 4.4154], [51.90369, 4.3515], [51.89996, 4.32267], [51.89119, 4.2737], [51.88194, 4.27808], [51.88884, 4.31626], [51.88791, 4.31821], [51.89381, 4.36787], [51.88497, 4.41772], [51.88033, 4.43906], [51.89740273617377, 4.460817447562738]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_2587f5eb96907a3bd807ed5ea983e874);
+        
+    
+            poly_line_83c15f72ad4bde75a7e67e3daf616873.bindTooltip(
+                `<div>
+                     Watergeus
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ebb13d72c2d8cdf798b021ccb07c72f2 = L.marker(
+                [51.89740273617377, 4.460817447562738],
+                {}
+            ).addTo(map_2587f5eb96907a3bd807ed5ea983e874);
+        
+    
+            var icon_795e51884ab0325804367d91afb6a957 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "parking", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_ebb13d72c2d8cdf798b021ccb07c72f2.setIcon(icon_795e51884ab0325804367d91afb6a957);
+        
+    
+            var marker_b9236c5d2b18bf6ceefe981273395041 = L.marker(
+                [51.89740273617377, 4.460817447562738],
+                {}
+            ).addTo(map_2587f5eb96907a3bd807ed5ea983e874);
+        
+    
+            var icon_0f8d29926efe2a9219e8e5aaec08652b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "parking", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_b9236c5d2b18bf6ceefe981273395041.setIcon(icon_0f8d29926efe2a9219e8e5aaec08652b);
+        
+    
+            var poly_line_a0fa159b02905006a7a39ab54e027d80 = L.polyline(
+                [[51.89740273617377, 4.460817447562738], [51.90252, 4.46178], [51.91332, 4.48647], [51.90326, 4.53556], [51.90304, 4.5347], [51.89759, 4.4826], [51.89449, 4.47617], [51.89449, 4.47617], [51.89740273617377, 4.460817447562738]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_2587f5eb96907a3bd807ed5ea983e874);
+        
+    
+            poly_line_a0fa159b02905006a7a39ab54e027d80.bindTooltip(
+                `<div>
+                     Waterbuffel
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ce87e668372b05cd58d27f6509431f93 = L.marker(
+                [51.89740273617377, 4.460817447562738],
+                {}
+            ).addTo(map_2587f5eb96907a3bd807ed5ea983e874);
+        
+    
+            var icon_6a674ff76724c6d58e70b816f64c6b8e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "parking", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_ce87e668372b05cd58d27f6509431f93.setIcon(icon_6a674ff76724c6d58e70b816f64c6b8e);
+        
+    
+            var marker_63520542ea79486868e63f3d4da1024e = L.marker(
+                [51.89740273617377, 4.460817447562738],
+                {}
+            ).addTo(map_2587f5eb96907a3bd807ed5ea983e874);
+        
+    
+            var icon_872d60203538b945cc26dbdee47c4f93 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "parking", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_63520542ea79486868e63f3d4da1024e.setIcon(icon_872d60203538b945cc26dbdee47c4f93);
+        
+    
+            var poly_line_f697b776a41c1a7bd5fea64f21e5a53f = L.polyline(
+                [[51.89740273617377, 4.460817447562738], [51.8946, 4.23038], [51.92171, 4.20236], [51.92841, 4.19591], [51.93, 4.19271], [51.94137, 4.16789], [51.94155, 4.17796], [51.93724, 4.18534], [51.92112, 4.2172], [51.91239, 4.41913], [51.91176, 4.42314], [51.91176, 4.42314], [51.91176, 4.42314], [51.89740273617377, 4.460817447562738]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_2587f5eb96907a3bd807ed5ea983e874);
+        
+    
+            poly_line_f697b776a41c1a7bd5fea64f21e5a53f.bindTooltip(
+                `<div>
+                     Waterval
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b30e563d3e67c64bca7dce4cace516f4 = L.marker(
+                [51.89740273617377, 4.460817447562738],
+                {}
+            ).addTo(map_2587f5eb96907a3bd807ed5ea983e874);
+        
+    
+            var icon_ae7f8147b9f61d5c7ac03213bae028bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "parking", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_b30e563d3e67c64bca7dce4cace516f4.setIcon(icon_ae7f8147b9f61d5c7ac03213bae028bf);
+        
+    
+            var marker_f70821e7ae0481444d1a3dec363905be = L.marker(
+                [51.89740273617377, 4.460817447562738],
+                {}
+            ).addTo(map_2587f5eb96907a3bd807ed5ea983e874);
+        
+    
+            var icon_ad7e1f599da81a5b28d91485f996f957 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "parking", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_f70821e7ae0481444d1a3dec363905be.setIcon(icon_ad7e1f599da81a5b28d91485f996f957);
+        
+    
+            var poly_line_8641e747711d987719ca301f39eac248 = L.polyline(
+                [[51.96249648967369, 4.137689887873459], [51.95936, 4.14279], [51.95716, 4.14686], [51.95483, 4.13037], [51.95338, 4.12827], [51.94323, 4.07288], [51.94018, 4.06521], [51.96764, 4.04179], [51.97245, 4.03827], [51.95741, 4.12565], [51.95745, 4.12574], [51.96249648967369, 4.137689887873459]],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_2587f5eb96907a3bd807ed5ea983e874);
+        
+    
+            poly_line_8641e747711d987719ca301f39eac248.bindTooltip(
+                `<div>
+                     Waterman
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_83003699537874978c742e6a468d354c = L.marker(
+                [51.96249648967369, 4.137689887873459],
+                {}
+            ).addTo(map_2587f5eb96907a3bd807ed5ea983e874);
+        
+    
+            var icon_e268bff73ab355c0d0ebcd9d57ad422c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "parking", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_83003699537874978c742e6a468d354c.setIcon(icon_e268bff73ab355c0d0ebcd9d57ad422c);
+        
+    
+            var marker_ac1fdf555aa0d66ec16bdf6758bf96d1 = L.marker(
+                [51.96249648967369, 4.137689887873459],
+                {}
+            ).addTo(map_2587f5eb96907a3bd807ed5ea983e874);
+        
+    
+            var icon_23d63c0589bc3f89f0dd9b1cbaf25cba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "parking", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_ac1fdf555aa0d66ec16bdf6758bf96d1.setIcon(icon_23d63c0589bc3f89f0dd9b1cbaf25cba);
+        
+</script>
+</html>
